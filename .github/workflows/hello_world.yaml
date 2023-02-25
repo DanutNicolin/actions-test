@@ -5,13 +5,10 @@ on:
   push:               # workflow triggers on 'push' event
     branches:
       - main
-<<<<<<< HEAD
   pull_request:       # workflow triggers on 'pull request' event
      brancehs:
-=======
   pull_request:
      branches:
->>>>>>> refs/remotes/origin/main
       - main
   workflow_dispatch:  # this event generates a button in the UI for triggering the workflow
 

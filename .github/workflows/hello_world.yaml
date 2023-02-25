@@ -1,22 +1,29 @@
 name: Hello World workflow
-on:
-  push:
+
+  # Section 1 -> declares triggering events and branches
+on: 
+  push:               # workflow triggers on 'push' event
     branches:
       - main
-  pull_request:
+  pull_request:       # workflow triggers on 'pull request' event
      brancehs:
       - main
-  workflow_dispatch:
+  workflow_dispatch:  # this event generates a button in the UI for triggering the workflow
 
+
+  # Sectio 2 -> declares jobs and jobs details
 jobs:
-  hello:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
+
+  hello:                             # job name
+    runs-on: ubuntu-latest           # the runner used (operating system)
+    steps:                           # steps o the job
+      - uses: actions/checkout@v2    # utilizes a action template
+                                     # action -> owner, checkout -> repo name, @v2 -> version, release name (can also be a branch or commit a hash )  
       - name: hello world
-        run: echo "hello world"
+        run: echo "hello world"      # the action from up is not used, will only echo
         shell: bash
-  goodbye:
+
+  goodbye:  
     runs-on: ubuntu-latest
     steps:
       - name: goodbye world

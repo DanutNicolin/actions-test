@@ -1,0 +1,13 @@
+name: Crate comment on new issues
+
+on:
+  issues:                   # workflow will be triggered by issues
+    types: [opened]         # more precise when one issue is oppened
+
+jobs:
+  comment-with-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "dump github context"
+        run : echo '${{ toJSON(github.event }}' | jq
+        shell: bash

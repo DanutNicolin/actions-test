@@ -3,7 +3,7 @@ name: Hello World workflow
   # Section 1 -> declares triggering events and branches
 on: 
   push:               # workflow triggers on 'push' event
-    branches:
+     branches:
       - main
   pull_request:       # workflow triggers on 'pull request' event
      brancehs:

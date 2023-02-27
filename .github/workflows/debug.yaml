@@ -1,7 +1,7 @@
 name: Auto Comment
 on: 
   issues:
-    types: [open]
+    types: [opened]
 
 # permissions:
 #   contents: 'read'

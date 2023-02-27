@@ -11,3 +11,12 @@ jobs:
       - name: "dump github context    "
         run : echo '${{ toJSON(github.event) }}'
         shell: bash
+
+      - name: Create comment
+        uses: peter-evans/create-or-update-comment@v1
+        with:
+          issue-number: '${{ github.event.issue.number }}'
+          body: |
+            This is a multiline automatically 
+            generated comment
+          reactions: '+1'

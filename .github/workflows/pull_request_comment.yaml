@@ -6,6 +6,8 @@ on:
 
 jobs:
   comment-on-pull:
+  runs-on: ubuntu-latest
+  steps:
   - name: Create comment on pull
           uses: petter-evans/creat-or-upate-comment@v2
           with:

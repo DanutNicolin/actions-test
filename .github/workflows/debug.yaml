@@ -13,13 +13,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Create comment with api
-#         env:
-#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#           ORGANIZATION: ${{ github.event.organization.login }}
-#           REPOSITORY: ${{ github.event.repository.name }}
-#           ISSUE_NUMBER: ${{ github.event.issue.number }}
-        run: echo '${{ toJSON(github.event) }}'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ORGANIZATION: ${{ github.event.owner.login }}
+          REPOSITORY: ${{ github.event.repository.name }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: echo '${{ env }}'
         shell: bash
+#         run: echo '${{ toJSON(github.event) }}'
+#         shell: bash
       # run: |
       #   gh api -X POST \
       #     https://api.github.com/repos/${ORGANIZATION}/${REPOSITORY}/issues/${ISSUE_NUMBER}/comments} \

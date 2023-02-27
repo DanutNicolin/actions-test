@@ -1,5 +1,7 @@
 name: Auto Comment
-on: push
+on: 
+  issues:
+    types: [open]
 
 # permissions:
 #   contents: 'read'

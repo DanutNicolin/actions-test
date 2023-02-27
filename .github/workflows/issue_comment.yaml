@@ -7,13 +7,9 @@ on:
 jobs:
   comment-with-action:
     runs-on: ubuntu-latest
-  
-     
-      - name: Create comment
-        uses: peter-evans/create-or-update-comment@v2
-        with:
-          issue-number: '${{ github.event.issue.number }}'
-          body: |
-            This is a multiline automatically 
-            generated comment
-          reactions: '+1'
+    - name: create comment
+      uses: peter-evans/create-or-update-comment@v2
+      with:
+        issue-number: '${{ github.event.issue.number  }}'
+        body: asdasdasdasdasdada
+

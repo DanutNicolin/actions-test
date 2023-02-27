@@ -9,7 +9,7 @@ jobs:
   runs-on: ubuntu-latest
   steps:
   - name: Create comment on pull
-          uses: petter-evans/creat-or-upate-comment@v2
+          uses: peter-evans/creat-or-upate-comment@v2
           with:
             issue-number: '${{ github.event.issue.number  }}'
             body: bodyyyyyyyyyyyyyy

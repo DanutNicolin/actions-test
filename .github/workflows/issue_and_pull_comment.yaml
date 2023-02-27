@@ -39,4 +39,4 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         ORGANIZATION: ${{ github.event.organization.login }}
         REPOSITORY: ${{ github.event.repository.name }}
-        ISSUE_NUMBER: ${{ github.event.repository.issue.number }}
+        ISSUE_NUMBER: ${{ github.event.issue.number }}

@@ -6,4 +6,8 @@ print("asdasd")
 print("asdasd")
 
 print("ASdasd")
+<<<<<<< HEAD
+>>>>>>> test-branch
+=======
+print('aaaaaaaaaaa')
 >>>>>>> test-branch

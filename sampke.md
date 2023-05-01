@@ -37,3 +37,4 @@
 1. `cd path/to/folder/containing/docker-compose file`
 2. `docker compose-up`<br>
    &nbsp;&nbsp;&nbsp;&nbsp;*to stop the curently running container press `CTRL+C` and run `docker-compose down`*
+  

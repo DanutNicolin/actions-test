@@ -17,7 +17,7 @@
 4. `curl curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg`
 5. <code>echo \ <br>
 "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \ <br>
-\$(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list <code>
+\$(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list </code>
 6. `sudo apt-get update`
 7. `sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin`
 8. `sudo nano /etc/group` -> *search for docker and and add your username at the end of the line with docker (after the colon)*

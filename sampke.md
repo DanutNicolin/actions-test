@@ -22,7 +22,7 @@
 7. `sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin`
 8. `sudo nano /etc/group` -> *search for docker and and add your username at the end of the line with docker (after the colon)*
 9. Log out and log back in.<br>
-	&nbsp;&nbsp;&nbsp;&nbsp;*If you get <span style="color:red">"ERROR: Cannot connect to the Docker daemon at unix:///var/run/docker.sock."</span> run:*
+	&nbsp;&nbsp;&nbsp;&nbsp;*If you get <span style="color:red">*"ERROR: Cannot connect to the Docker daemon at unix:///var/run/docker.sock."*</span> run:*
 	    &nbsp;&nbsp;&nbsp;&nbsp;`sudo systemctl start docker`
 10. `docker info` -> *if docker info appears without errors, instalation is ok*
 
